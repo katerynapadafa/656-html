@@ -1,13 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stickerz</title>
 </head>
+
 <body>
-    <h1>Hello HTML!</h1>
-  
+    <header class="header">
+        <nav class="header__top-nav">
+            <div class="header__top-nav-logo" style="background-color: black;">
+                <img width="210" src="img/logo.svg" alt="Zen cottages logo">
+            </div>
+            <div class="header__top-nav-menu">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Cottages</a>
+                <a href="#">Testimonials</a>
+            </div>
+            <div class="header__top-nav-phone">
+                <span class="header__top-nav-phone-call-us">CALL US</span> +1 (234) 567 89 00
+            </div>
+        </nav>
+        <div class="header__banner">
+            <h1>Zen Cottages</h1>
+            <p class="header__banner-subheading">We can build your dream home</p>
+            <button>Request a call</button>
+        </div>
+    </header>
+    <main>
+        <div class="car-show">
+            <article class="car-show__card">
+                <img width="300" src="img/mercedes.webp" alt="Mercedes">
+                <h3>SUVs</h3>
+                <p>No obstacles on your way can spoil the trip.</p>
+                <a href="#contact-form">Learn more</a>
+            </article>
+
+            <article class="car-show__card">
+                <img width="300" src="img/nissan.webp" alt="Nissan">
+                <h3>Sports Cars</h3>
+                <p>Feel what true speed and freedom are.</p>
+                <a href="#contact-form">Learn more</a>
+            </article>
+            <article class="car-show__card">
+                <img width="300" src="img/merc.webp" alt="Mercedes+">
+                <h3>Luxury</h3>
+                <p>Comfortable cars for demanding clients.</p>
+                <a href="#contact-form">Learn more</a>
+            </article>
+        </div>
+        <div class="product-tabs">
+            <div class="tab-header">
+                <a href="#">Featured</a>
+                <a href="#">Sale</a>
+                <a href="#">New</a>
+            </div>
+            <div class="tab-content">
+                <article class="car-show__card">
+                    <img width="300" src="img/mercedes.webp" alt="Mercedes">
+                    <h3>SUVs</h3>
+                    <p>1000.00</p>
+                    <a href="#contact-form">Learn more</a>
+                    <button>Buy</button>
+                </article>
+
+                <article class="car-show__card">
+                    <img width="300" src="img/nissan.webp" alt="Nissan">
+                    <h3>Sports Cars</h3>
+                    <p>2000.00</p>
+                    <a href="#contact-form">Learn more</a>
+                    <button>Buy</button>
+                </article>
+                <article class="car-show__card">
+                    <img width="300" src="img/merc.webp" alt="Mercedes+">
+                    <h3>Luxury</h3>
+                    <p>3000.00</p>
+                    <a href="#contact-form">Learn more</a>
+                    <button>Buy</button>
+                </article>
+            </div>
+        </div> <!-- End tab content-->
+        <div class="promos">
+            <div class="promos__sales">
+                <h3>JBL Speakers</h3>
+                <div class="promos__sale-price">
+                    <span>$300</span> <span>$250</span>
+                </div>
+                <p>Special price on a variety of JBL Loudspeakers.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contscts-info">
+            <p class="subheader"> </p>
+            <h2 class="contacts">Contact us any time</h2>
+        </div>
+        <form action="">
+            <input name="username" type="text" placeholder="Enter your full name*" required>
+            <input name="phonenumber" type="text" placeholder="Enter your phone number*" required>
+            <input name="email" type="email" placeholder="Enter your email*" required>
+            <textarea name="message" id="" cols="30" rows="10"></textarea>
+            <button>Request a quote</button>
+        </form>
+
+    </footer>
 </body>
+
 </html>
